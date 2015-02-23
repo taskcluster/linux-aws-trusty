@@ -126,7 +126,7 @@ stampdir	:= $(CURDIR)/debian/stamps
 bin_pkg_name=linux-image-$(abi_release)
 extra_pkg_name=linux-image-extra-$(abi_release)
 hdrs_pkg_name=linux-headers-$(abi_release)
-indep_hdrs_pkg_name=$(src_pkg_name)-headers-$(abi_release)
+indep_hdrs_pkg_name=linux-headers-$(abi_release)
 
 #
 # The generation of content in the doc package depends on both 'AUTOBUILD=' and
@@ -220,6 +220,9 @@ endif
 
 conc_level		= -j$(CONCURRENCY_LEVEL)
 
+# Work out which compiler build we are using.
+gcc_ubuntu_version=$(shell $(CROSS_COMPILE)$(if $(gcc),$(gcc),gcc) --version 2>&1 | sed -n -e 's@^.*(Ubuntu.* [^-]*-\([0-9]*\).*).*@\1@p')
+
 # target_flavour is filled in for each step
 kmake = make ARCH=$(build_arch) \
 	CROSS_COMPILE=$(CROSS_COMPILE) \
@@ -227,7 +230,8 @@ kmake = make ARCH=$(build_arch) \
 	CONFIG_DEBUG_SECTION_MISMATCH=y \
 	KBUILD_BUILD_VERSION="$(uploadnum)" \
 	LOCALVERSION= localver-extra= \
-	CFLAGS_MODULE="-DPKG_ABI=$(abinum)"
+	CFLAGS_MODULE="-DPKG_ABI=$(abinum)" \
+	CFLAGS_KERNEL="-DGCC_UBUNTU_VERSION=$(gcc_ubuntu_version)"
 ifneq ($(LOCAL_ENV_CC),)
 kmake += CC=$(LOCAL_ENV_CC) DISTCC_HOSTS=$(LOCAL_ENV_DISTCC_HOSTS)
 endif
