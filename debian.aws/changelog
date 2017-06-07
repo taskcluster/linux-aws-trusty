@@ -1,0 +1,14 @@
+linux-aws (4.4.0-1001.1) trusty; urgency=low
+
+  [ Kamal Mostafa ]
+
+  * Initial linux-aws packaging based on linux-lts-xenial
+    (4.4.0-79.100~14.04.1)
+
+ -- Kamal Mostafa <kamal@canonical.com>  Wed, 07 Jun 2017 08:32:03 -0700
+
+linux-aws (4.4.0-1000.0) trusty; urgency=low
+
+  * Empty entry
+
+ -- Kamal Mostafa <kamal@canonical.com>  Wed, 07 Jun 2017 08:32:03 -0700
