@@ -39,10 +39,6 @@ endif
 obj-$(CONFIG_WLAN_VENDOR_RSI) += rsi/
 ##
 ##
-obj-$(CONFIG_IXGBEVF_2_14_2)	+= ixgbevf-2.14.2/src/
-##
-##
-##
 ##
 obj-$(CONFIG_OPENNSL) += opennsl/
 ##
@@ -50,6 +46,10 @@ obj-$(CONFIG_OPENNSL) += opennsl/
 ##
 ##
 obj-$(CONFIG_BNXT_BPO) += bnxt/
+##
+##
+##
+obj-$(CONFIG_IXGBEVF_2_14_2)	+= ixgbevf-2.14.2/src/
 ##
 ##
 ##
