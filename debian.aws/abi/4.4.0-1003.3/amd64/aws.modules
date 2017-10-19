@@ -2684,10 +2684,8 @@ x_tables
 xcbc
 xen-blkback
 xen-evtchn
-xen-fbfront
 xen-gntalloc
 xen-gntdev
-xen-kbdfront
 xen-netback
 xen-pciback
 xen-pcifront
