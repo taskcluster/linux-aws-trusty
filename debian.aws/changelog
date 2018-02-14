@@ -1,3 +1,10 @@
+linux-aws (4.4.0-1014.14taskcluster) trusty; urgency=medium
+
+  * Add V4L2 module
+  * Add snd-aloop module
+
+ -- Wander Lairson Costa <wcosta@mozilla.com>  Wed, 14 Feb 2018 17:45:58 +0000
+
 linux-aws (4.4.0-1014.14) trusty; urgency=medium
 
   * linux-aws: 4.4.0-1014.14 -proposed tracker (LP: #1748486)
