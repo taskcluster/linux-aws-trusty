@@ -7120,7 +7120,7 @@ CONFIG_XEN_SCRUB_PAGES                          policy<{'amd64': 'y', 'arm64': '
 
 # Menu: Enable loadable module support
 CONFIG_MODULES                                  policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'i386': 'y', 'powerpc': 'y', 'ppc64el': 'y', 's390x': 'y'}>
-CONFIG_MODULE_FORCE_LOAD                        policy<{'amd64': 'n', 'arm64': 'n', 'armhf': 'n', 'i386': 'n', 'powerpc': 'n', 'ppc64el': 'n', 's390x': 'n'}>
+CONFIG_MODULE_FORCE_LOAD                        policy<{'amd64': 'y', 'arm64': 'n', 'armhf': 'n', 'i386': 'y', 'powerpc': 'n', 'ppc64el': 'n', 's390x': 'n'}>
 CONFIG_MODULE_UNLOAD                            policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'i386': 'y', 'powerpc': 'y', 'ppc64el': 'y', 's390x': 'y'}>
 CONFIG_MODULE_FORCE_UNLOAD                      policy<{'amd64': 'n', 'arm64': 'n', 'armhf': 'n', 'i386': 'n', 'powerpc': 'n', 'ppc64el': 'n', 's390x': 'n'}>
 CONFIG_MODVERSIONS                              policy<{'amd64': 'y', 'arm64': 'y', 'armhf': 'y', 'i386': 'y', 'powerpc': 'y', 'ppc64el': 'y', 's390x': 'y'}>
