@@ -3,7 +3,7 @@
 flavour="$1"
 prev_abidir="$2"
 curr_abidir="$3"
-skipretpoline="$4"
+skipretpoline="true"
 
 echo "II: Checking retpoline indirections for $flavour...";
 

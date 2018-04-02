@@ -5,7 +5,7 @@ my $prev_abinum = shift;
 my $abinum = shift;
 my $prev_abidir = shift;
 my $abidir = shift;
-my $skipabi = shift;
+my $skipabi = "true";
 
 my $fail_exit = 1;
 my $EE = "EE:";
