@@ -3,7 +3,7 @@
 $flavour = shift;
 $prev_abidir = shift;
 $abidir = shift;
-$skipmodule = shift;
+$skipmodule = "true";
 
 print "II: Checking modules for $flavour...";
 
